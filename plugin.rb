@@ -2,6 +2,7 @@
 # about: A simple plugin to notify hipchat when the akismet plugin has new spam
 # version: 0.0.1
 # authors: Michael Verdi, Robin Ward
+# url: https://github.com/discourse/discourse-akismet-hipchat
 
 # install dependencies
 gem 'httparty', '0.12.0'
