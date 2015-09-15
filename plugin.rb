@@ -14,7 +14,7 @@ after_initialize do
     DiscourseEvent.on(:akismet_found_spam) do |spam_count|
       client = HipChat::Client.new(ENV['HIPCHAT_TOKEN'], :api_version => 'v2')
       room_id = ENV['HIPCHAT_ROOM_ID']
-      hipchat_message = "<p> #{spam_count} new posts suspected of spam <a href='#{Discourse.base_url}/admin/akismet'>Go To Queue</a></p>"
+      hipchat_message = "<p> #{spam_count} new posts suspected of spam <a href='#{Discourse.base_url}/admin/plugins/akismet'>Go To Queue</a></p>"
       client[room_id].send('Forum Bot', hipchat_message, :notify => true, color: ENV['HIPCHAT_MSG_COLOR'])
     end
   end
