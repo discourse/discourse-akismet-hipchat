@@ -5,10 +5,10 @@
 # url: https://github.com/discourse/discourse-akismet-hipchat
 
 # install dependencies
+gem 'multi_xml', '0.6.0'
+gem 'mimemagic', '0.3.2'
 gem 'httparty', '0.15.5'
 gem 'hipchat', '1.5.4'
-gem 'mimemagic', '0.3.2'
-gem 'multi_xml', '0.6.0'
 
 after_initialize do
 
