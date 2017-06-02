@@ -7,6 +7,8 @@
 # install dependencies
 gem 'httparty', '0.15.5'
 gem 'hipchat', '1.5.4'
+gem 'mimemagic', '0.3.2'
+gem 'multi_xml', '0.6.0'
 
 after_initialize do
 
