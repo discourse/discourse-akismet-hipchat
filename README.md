@@ -1,3 +1,5 @@
+> :warning: Hipchat has been declared [end of life](https://www.atlassian.com/partnerships/slack/faq), so this plugin is no longer supported
+
 # discourse-akismet-hipchat
 
 This plugin notifies hipchat when your Discourse server has new spam to review.
